@@ -28,26 +28,9 @@ import UIKit
 
 //===
 
-protocol ViewContainer { }
-
-//===
-
-extension UIView: ViewContainer { }
-
-//===
-
-extension ViewContainer where Self: UIView
+public
+extension UIView
 {
-    @discardableResult
-    func addSubviews(_ views: UIView...) -> UIView
-    {
-        views.forEach { self.addSubview($0) }
-        
-        //---
-        
-        return self
-    }
-    
     func findFirstResponder() -> UIView?
     {
         if
@@ -59,20 +42,5 @@ extension ViewContainer where Self: UIView
         {
             return subviews.reduce(nil) { $0 ?? $1.findFirstResponder() }
         }
-    }
-}
-
-//===
-
-extension ViewContainer where Self: UIStackView
-{
-    @discardableResult
-    func addSubviews(_ views: UIView...) -> UIStackView
-    {
-        views.forEach { self.addArrangedSubview($0) }
-        
-        //---
-        
-        return self
     }
 }

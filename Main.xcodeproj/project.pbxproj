@@ -8,7 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		21D31417EA3CE5B31F61CBE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB71CCA9BB2C76BD711DC226 /* Foundation.framework */; };
-		F88BC729E429074AA5E403E1 /* UIView+Extras.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D8936480C8B33B9583D3A9 /* UIView+Extras.swift */; };
+		947B1B271F5BCA4900334E75 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B1B261F5BCA4900334E75 /* Misc.swift */; };
+		F88BC729E429074AA5E403E1 /* AddSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D8936480C8B33B9583D3A9 /* AddSubviews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,8 +26,9 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		B6D8936480C8B33B9583D3A9 /* UIView+Extras.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = "UIView+Extras.swift"; sourceTree = "<group>"; };
-		DF7C4AB3424BACFC8D1080B4 /* Fwk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Fwk.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		947B1B261F5BCA4900334E75 /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
+		B6D8936480C8B33B9583D3A9 /* AddSubviews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddSubviews.swift; sourceTree = "<group>"; };
+		DF7C4AB3424BACFC8D1080B4 /* Fwk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Fwk.framework; path = XCEViewExt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB71CCA9BB2C76BD711DC226 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
@@ -45,9 +47,9 @@
 		13C09551850AB26AE1125EDC /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				B6D8936480C8B33B9583D3A9 /* UIView+Extras.swift */,
+				947B1B261F5BCA4900334E75 /* Misc.swift */,
+				B6D8936480C8B33B9583D3A9 /* AddSubviews.swift */,
 			);
-			name = Sources;
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
 		};
@@ -89,7 +91,7 @@
 			isa = PBXGroup;
 			children = (
 			);
-			name = "$local";
+			name = $local;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -154,7 +156,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
 			shellScript = "if which swiftlint >/dev/null; then\n    swiftlint\nelse\n    echo \"warning: SwiftLint not installed, download from https://github.com/realm/SwiftLint\"\nfi";
-			showEnvVarsInLog = 1;
 		};
 /* End PBXShellScriptBuildPhase section */
 
@@ -163,7 +164,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F88BC729E429074AA5E403E1 /* UIView+Extras.swift in Sources */,
+				947B1B271F5BCA4900334E75 /* Misc.swift in Sources */,
+				F88BC729E429074AA5E403E1 /* AddSubviews.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
