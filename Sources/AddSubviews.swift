@@ -28,6 +28,7 @@ import UIKit
 
 //===
 
+public
 protocol ViewContainer { }
 
 //===
@@ -36,6 +37,7 @@ extension UIView: ViewContainer { }
 
 //===
 
+public
 extension ViewContainer where Self: UIView
 {
     @discardableResult
@@ -52,6 +54,7 @@ extension ViewContainer where Self: UIView
 //===
 
 @available(iOS 9.0, *)
+public
 extension ViewContainer where Self: UIStackView
 {
     @discardableResult
