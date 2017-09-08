@@ -10,6 +10,7 @@
 		21D31417EA3CE5B31F61CBE7 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB71CCA9BB2C76BD711DC226 /* Foundation.framework */; };
 		947B1B271F5BCA4900334E75 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B1B261F5BCA4900334E75 /* Misc.swift */; };
 		947B1B291F5BCB5E00334E75 /* AnimatableChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B1B281F5BCB5E00334E75 /* AnimatableChanges.swift */; };
+		94AED4691F629CA4009F4346 /* ShowHide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AED4681F629CA4009F4346 /* ShowHide.swift */; };
 		F88BC729E429074AA5E403E1 /* AddSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D8936480C8B33B9583D3A9 /* AddSubviews.swift */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 /* Begin PBXFileReference section */
 		947B1B261F5BCA4900334E75 /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
 		947B1B281F5BCB5E00334E75 /* AnimatableChanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableChanges.swift; sourceTree = "<group>"; };
+		94AED4681F629CA4009F4346 /* ShowHide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowHide.swift; sourceTree = "<group>"; };
 		B6D8936480C8B33B9583D3A9 /* AddSubviews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddSubviews.swift; sourceTree = "<group>"; };
 		DF7C4AB3424BACFC8D1080B4 /* Fwk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Fwk.framework; path = XCEViewExt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB71CCA9BB2C76BD711DC226 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
@@ -52,6 +54,7 @@
 				947B1B261F5BCA4900334E75 /* Misc.swift */,
 				B6D8936480C8B33B9583D3A9 /* AddSubviews.swift */,
 				947B1B281F5BCB5E00334E75 /* AnimatableChanges.swift */,
+				94AED4681F629CA4009F4346 /* ShowHide.swift */,
 			);
 			path = Sources;
 			sourceTree = SOURCE_ROOT;
@@ -167,6 +170,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				94AED4691F629CA4009F4346 /* ShowHide.swift in Sources */,
 				947B1B271F5BCA4900334E75 /* Misc.swift in Sources */,
 				F88BC729E429074AA5E403E1 /* AddSubviews.swift in Sources */,
 				947B1B291F5BCB5E00334E75 /* AnimatableChanges.swift in Sources */,
