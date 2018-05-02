@@ -67,3 +67,48 @@ extension ViewContainer where Self: UIStackView
         return self
     }
 }
+
+//---
+
+public
+extension UIView
+{
+    func removeAllConstraints()
+    {
+        removeConstraints(constraints)
+    }
+}
+
+//---
+
+public
+extension UIView
+{
+    func allSubviews() -> [UIView]
+    {
+        var result: [UIView] = []
+        
+        //---
+        
+        collectAllSubviews(into: &result)
+        
+        //---
+        
+        return result
+    }
+    
+    //---
+    
+    private
+    func collectAllSubviews(into list: inout [UIView])
+    {
+        for sv in subviews
+        {
+            list.append(sv)
+            
+            //---
+            
+            sv.collectAllSubviews(into: &list)
+        }
+    }
+}
