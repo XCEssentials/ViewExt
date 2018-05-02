@@ -26,16 +26,16 @@
 
 import UIKit
 
-//===
+//---
 
 public
 protocol ViewContainer { }
 
-//===
+//---
 
 extension UIView: ViewContainer { }
 
-//===
+//---
 
 public
 extension ViewContainer where Self: UIView
@@ -51,7 +51,7 @@ extension ViewContainer where Self: UIView
     }
 }
 
-//===
+//---
 
 @available(iOS 9.0, *)
 public
@@ -65,5 +65,50 @@ extension ViewContainer where Self: UIStackView
         //---
         
         return self
+    }
+}
+
+//---
+
+public
+extension UIView
+{
+    func removeAllConstraints()
+    {
+        removeConstraints(constraints)
+    }
+}
+
+//---
+
+public
+extension UIView
+{
+    func allSubviews() -> [UIView]
+    {
+        var result: [UIView] = []
+        
+        //---
+        
+        collectAllSubviews(into: &result)
+        
+        //---
+        
+        return result
+    }
+    
+    //---
+    
+    private
+    func collectAllSubviews(into list: inout [UIView])
+    {
+        for sv in subviews
+        {
+            list.append(sv)
+            
+            //---
+            
+            sv.collectAllSubviews(into: &list)
+        }
     }
 }

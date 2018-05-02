@@ -11,7 +11,7 @@
 		947B1B271F5BCA4900334E75 /* Misc.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B1B261F5BCA4900334E75 /* Misc.swift */; };
 		947B1B291F5BCB5E00334E75 /* AnimatableChanges.swift in Sources */ = {isa = PBXBuildFile; fileRef = 947B1B281F5BCB5E00334E75 /* AnimatableChanges.swift */; };
 		94AED4691F629CA4009F4346 /* ShowHide.swift in Sources */ = {isa = PBXBuildFile; fileRef = 94AED4681F629CA4009F4346 /* ShowHide.swift */; };
-		F88BC729E429074AA5E403E1 /* AddSubviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D8936480C8B33B9583D3A9 /* AddSubviews.swift */; };
+		F88BC729E429074AA5E403E1 /* Subviews.swift in Sources */ = {isa = PBXBuildFile; fileRef = B6D8936480C8B33B9583D3A9 /* Subviews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,7 +31,7 @@
 		947B1B261F5BCA4900334E75 /* Misc.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Misc.swift; sourceTree = "<group>"; };
 		947B1B281F5BCB5E00334E75 /* AnimatableChanges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnimatableChanges.swift; sourceTree = "<group>"; };
 		94AED4681F629CA4009F4346 /* ShowHide.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowHide.swift; sourceTree = "<group>"; };
-		B6D8936480C8B33B9583D3A9 /* AddSubviews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = AddSubviews.swift; sourceTree = "<group>"; };
+		B6D8936480C8B33B9583D3A9 /* Subviews.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = Subviews.swift; sourceTree = "<group>"; };
 		DF7C4AB3424BACFC8D1080B4 /* Fwk.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = Fwk.framework; path = XCEViewExt.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB71CCA9BB2C76BD711DC226 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
@@ -52,7 +52,7 @@
 			isa = PBXGroup;
 			children = (
 				947B1B261F5BCA4900334E75 /* Misc.swift */,
-				B6D8936480C8B33B9583D3A9 /* AddSubviews.swift */,
+				B6D8936480C8B33B9583D3A9 /* Subviews.swift */,
 				947B1B281F5BCB5E00334E75 /* AnimatableChanges.swift */,
 				94AED4681F629CA4009F4346 /* ShowHide.swift */,
 			);
@@ -172,7 +172,7 @@
 			files = (
 				94AED4691F629CA4009F4346 /* ShowHide.swift in Sources */,
 				947B1B271F5BCA4900334E75 /* Misc.swift in Sources */,
-				F88BC729E429074AA5E403E1 /* AddSubviews.swift in Sources */,
+				F88BC729E429074AA5E403E1 /* Subviews.swift in Sources */,
 				947B1B291F5BCB5E00334E75 /* AnimatableChanges.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -205,7 +205,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = dwarf;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -258,7 +258,7 @@
 				CODE_SIGN_IDENTITY = "-";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
 				COPY_PHASE_STRIP = NO;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -283,7 +283,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEFINES_MODULE = NO;
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = Info/Fwk.plist;
@@ -306,7 +306,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CURRENT_PROJECT_VERSION = 3;
+				CURRENT_PROJECT_VERSION = 4;
 				DEFINES_MODULE = NO;
 				ENABLE_TESTABILITY = YES;
 				INFOPLIST_FILE = Info/Fwk.plist;

@@ -26,7 +26,7 @@
 
 import UIKit
 
-//===
+//---
 
 public
 typealias Changes = () -> Void
@@ -37,12 +37,12 @@ typealias Completion = (Bool) -> Void
 public
 typealias Animation<View: UIView> = (View, @escaping Changes, Completion?) -> Void
 
-//===
+//---
 
 public
 protocol Animatable: class { }
 
-//===
+//---
 
 public
 extension Animatable where Self: UIView
@@ -55,7 +55,7 @@ extension Animatable where Self: UIView
     }
 }
 
-//===
+//---
 
 public
 struct PendingChanges<View: UIView>
@@ -64,7 +64,7 @@ struct PendingChanges<View: UIView>
     let body: Changes
 }
 
-//===
+//---
 
 public
 extension PendingChanges
@@ -88,6 +88,6 @@ extension PendingChanges
     }
 }
 
-//===
+//---
 
 extension UIView: Animatable { }
